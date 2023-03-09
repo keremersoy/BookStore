@@ -19,6 +19,9 @@ namespace WebApi.BookOpertions.GetBookById
         public GetBookByIdModel Handle()
         {
             var book = _dbContext.Books.Where(x => x.Id == Id).SingleOrDefault();
+            if(book is null){
+                throw new InvalidOperationException("Kitap bulunamadı...");
+            }
             GetBookByIdModel result = new GetBookByIdModel()
             {
                 Id = book.Id,
