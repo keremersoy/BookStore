@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Tyos6NMsKdwR3xjuMtXolQ7dn1HY3rwxLGrdV4Hw/hRa6c0xJpnMnMEHrpZTQrBfdCrP+94WrdY9wSUevLsx/A==",
+  "dgSpecHash": "mXBsGxyz308UIUPAO3YS50r3nUTwLBVbAPyceG352bcIfv1hSyZsFBFNdxhUSCBnAKUchtu93n2FKybm/aX6ug==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kerem\\Desktop\\BookStore\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Kerem\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Kerem\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Kerem\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
+    "C:\\Users\\Kerem\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Kerem\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0-preview.1.23111.4\\microsoft.entityframeworkcore.8.0.0-preview.1.23111.4.nupkg.sha512",
     "C:\\Users\\Kerem\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.0-preview.1.23111.4\\microsoft.entityframeworkcore.abstractions.8.0.0-preview.1.23111.4.nupkg.sha512",
     "C:\\Users\\Kerem\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.0-preview.1.23111.4\\microsoft.entityframeworkcore.analyzers.8.0.0-preview.1.23111.4.nupkg.sha512",
