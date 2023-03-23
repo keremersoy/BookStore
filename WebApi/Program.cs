@@ -2,8 +2,11 @@ using WebApi.DBOperations;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using WebApi.Middlewares;
+using WebApi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSingleton<ILoggerService,ConsoleLogger>();
 
 // Add services to the container.
 builder.Services.AddDbContext<BookStoreDbContext>(options=>options.UseInMemoryDatabase(databaseName:"bookStoreDB"));
