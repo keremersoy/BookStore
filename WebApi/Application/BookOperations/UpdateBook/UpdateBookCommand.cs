@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using WebApi.DBOperations;
 using WebApi.Common;
 
-namespace WebApi.BookOpertions.UpdateBook
+namespace WebApi.Application.BookOpertions.UpdateBook
 {
     public class UpdateBookCommand
     {

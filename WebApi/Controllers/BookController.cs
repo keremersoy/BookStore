@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.DBOperations;
-using WebApi.BookOpertions.GetBooks;
-using WebApi.BookOpertions.CreateBook;
-using WebApi.BookOpertions.UpdateBook;
-using WebApi.BookOpertions.GetBookById;
-using WebApi.BookOpertions.DeleteBook;
+using WebApi.Application.BookOpertions.GetBooks;
+using WebApi.Application.BookOpertions.CreateBook;
+using WebApi.Application.BookOpertions.UpdateBook;
+using WebApi.Application.BookOpertions.GetBookById;
+using WebApi.Application.BookOpertions.DeleteBook;
 using FluentValidation.Results;
 using FluentValidation;
 

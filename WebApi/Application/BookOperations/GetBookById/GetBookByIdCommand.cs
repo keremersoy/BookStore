@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using WebApi.DBOperations;
 using WebApi.Common;
 
-namespace WebApi.BookOpertions.GetBookById
+namespace WebApi.Application.BookOpertions.GetBookById
 {
 
     public class GetBookByIdCommand
