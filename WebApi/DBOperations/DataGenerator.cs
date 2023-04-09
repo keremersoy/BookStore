@@ -20,18 +20,18 @@ namespace WebApi.DBOperations
                 context.Authors.AddRange(
                     new Author
                     {
-                        Name = "Tolstoy",
-                        Birthday = new DateTime(1850, 06, 12)
+                        Name = "Eric Ries",
+                        Birthday = new DateTime(1978 , 09, 22 )
                     },
                     new Author
                     {
-                        Name = "asdasd",
-                        Birthday = new DateTime(1985, 06, 12)
+                        Name = "Charlotte Perkins Gilman",
+                        Birthday = new DateTime(1860, 07, 03)
                     },
                     new Author
                     {
-                        Name = "fghfghlgf fghffghfghy",
-                        Birthday = new DateTime(1800, 06, 12)
+                        Name = "Frank Herbert",
+                        Birthday = new DateTime(1986, 02, 11)
                     });
 
                 context.Genres.AddRange(
@@ -54,6 +54,7 @@ namespace WebApi.DBOperations
                     {
                         Title = "Lean Startup",
                         GenreId = 1,
+                        AuthorId=1,
                         PageCount = 200,
                         PublishDate = new DateTime(2001, 06, 12)
                     },
@@ -61,6 +62,7 @@ namespace WebApi.DBOperations
                     {
                         Title = "Herland",
                         GenreId = 2,
+                        AuthorId=2,
                         PageCount = 250,
                         PublishDate = new DateTime(2010, 05, 23)
                     },
@@ -68,6 +70,7 @@ namespace WebApi.DBOperations
                     {
                         Title = "Dune",
                         GenreId = 2,
+                        AuthorId=3,
                         PageCount = 540,
                         PublishDate = new DateTime(2001, 12, 21)
                     }

@@ -15,8 +15,10 @@ namespace WebApi.Common
     {
         public MappingProfile(){
             CreateMap<CreateBookModel,Book>();
-            CreateMap<Book,GetBookByIdModel>().ForMember(dest=>dest.Genre,opt=>opt.MapFrom(src=>src.Genre.Name));
-            CreateMap<Book,BookViewModel>().ForMember(dest=>dest.Genre,opt=>opt.MapFrom(src=>src.Genre.Name));
+            CreateMap<Book,GetBookByIdModel>().ForMember(dest=>dest.Genre,opt=>opt.MapFrom(src=>src.Genre.Name))
+                                            .ForMember(dest=>dest.Author,opt=>opt.MapFrom(src=>src.Author.Name));
+            CreateMap<Book,BookViewModel>().ForMember(dest=>dest.Genre,opt=>opt.MapFrom(src=>src.Genre.Name))
+                                            .ForMember(dest=>dest.Author,opt=>opt.MapFrom(src=>src.Author.Name));
             CreateMap<Genre,GenresViewModel>();
             CreateMap<Genre,GenreDetailViewModel>();
             CreateMap<Author,AuthorsViewModel>();
