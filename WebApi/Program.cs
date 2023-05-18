@@ -7,6 +7,7 @@ using WebApi.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<ILoggerService,ConsoleLogger>();
+builder.Services.AddScoped<IBookStoreDbContext,BookStoreDbContext>();
 
 // Add services to the container.
 builder.Services.AddDbContext<BookStoreDbContext>(options=>options.UseInMemoryDatabase(databaseName:"bookStoreDB"));

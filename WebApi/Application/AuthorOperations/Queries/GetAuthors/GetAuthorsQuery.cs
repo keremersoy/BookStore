@@ -3,9 +3,9 @@ using WebApi.DBOperations;
 
 namespace WebApi.Application.AuthorOperations.Queries.GetAuthors{
     public class GetAuthorsQuery {
-        public readonly BookStoreDbContext _context;
+        public readonly IBookStoreDbContext _context;
         public readonly IMapper _mapper;
-        public GetAuthorsQuery(BookStoreDbContext context,IMapper mapper)
+        public GetAuthorsQuery(IBookStoreDbContext context,IMapper mapper)
         {
             _context=context;
             _mapper=mapper;
