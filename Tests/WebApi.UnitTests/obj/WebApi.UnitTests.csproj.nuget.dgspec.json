@@ -52,6 +52,14 @@
               "target": "Package",
               "version": "[6.11.0, )"
             },
+            "Microsoft.EntityFrameWorkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameWorkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.3.2, )"

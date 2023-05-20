@@ -10,12 +10,12 @@ using Microsoft.EntityFrameworkCore;
 namespace WebApi.Application.BookOpertions.GetBookById
 {
 
-    public class GetBookByIdCommand
+    public class GetBookDetailQuery
     {
         public int? Id { get; set; }
         public readonly IBookStoreDbContext _dbContext;
         public readonly IMapper _mapper;
-        public GetBookByIdCommand(IBookStoreDbContext context, IMapper mapper)
+        public GetBookDetailQuery(IBookStoreDbContext context, IMapper mapper)
         {
             _dbContext = context;
             _mapper = mapper;

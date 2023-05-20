@@ -38,10 +38,10 @@ namespace WebApi.Controllers
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            GetBookByIdCommand command = new GetBookByIdCommand(_context, _mappper);
+            GetBookDetailQuery command = new GetBookDetailQuery(_context, _mappper);
             GetBookByIdModel result;
             command.Id = id;
-            GetBookByIdCommandValidator validator = new GetBookByIdCommandValidator();
+            GetBookDetailQueryValidator validator = new GetBookDetailQueryValidator();
             validator.ValidateAndThrow(command);
             result = command.Handle();
 
